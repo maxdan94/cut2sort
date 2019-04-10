@@ -268,13 +268,13 @@ int main(int argc,char** argv){
 	printf("Reading edgelist from file %s\n",argv[1]);
 	g=readedgelist(argv[1]);
 
+	printf("Building adjacency array\n");
+	map=malloc(g->n*sizeof(unsigned long));
+	mkadjlist(g);
+	n=g->n;
+
 	printf("Number of nodes: %lu\n",g->n);
 	printf("Number of edges: %lu\n",g->e);
-
-	printf("Building adjacency array\n");
-	n=g->n;
-	map=malloc(n*sizeof(unsigned long));
-	mkadjlist(g);
 
 	printf("Starting recursive bisections\n");
 	recurs(bisec, g, 0, map);

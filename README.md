@@ -10,11 +10,10 @@ Computes graph cut recursively in order to obtain an ordering of the nodes
 
 ## To execute:
 
-"./cut2order edgelist.txt order.txt [bisection]".
-
-"edgelist.txt" should contain an undirected unweighted graph: one edge on each line (two unsigned long (nodes' ID)) separated by a space.
-
-"order.txt": will contain the resulting order of the nodes: "oldID newID\n" on each line.
+"./cut2order edgelist.txt order.txt [bisection]"
+- "edgelist.txt" should contain an undirected unweighted graph: one edge on each line (two unsigned long (nodes' ID)) separated by a space.
+- "order.txt": will contain the resulting order of the nodes: "newID oldID\n" on each line.
+- Nodes with degree 0 (i.e. belonging to 0 edges) in the original graph are ignored.
 
 option "bisection": the  bisection algorithm to use, default is 1.
 - 0: random bisection
