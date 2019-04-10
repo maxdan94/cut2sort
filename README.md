@@ -10,7 +10,7 @@ Computes graph cut recursively in order to obtain an ordering of the nodes
 
 ## To execute:
 
-"./cut2order edgelist.txt tree.txt [bisection]".
+"./cut2order edgelist.txt order.txt [bisection]".
 
 "edgelist.txt" should contain an undirected unweighted graph: one edge on each line (two unsigned long (nodes' ID)) separated by a space.
 
