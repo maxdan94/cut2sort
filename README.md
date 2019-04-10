@@ -14,7 +14,7 @@ Computes graph cut recursively in order to obtain an ordering of the nodes
 
 "edgelist.txt" should contain an undirected unweighted graph: one edge on each line (two unsigned long (nodes' ID)) separated by a space.
 
-"order.txt": will contain the nodes orders: "oldID newID\n" on each line.
+"order.txt": will contain the resulting order of the nodes: "oldID newID\n" on each line.
 
 option "bisection": the  bisection algorithm to use, default is 1.
 - 0: random bisection
