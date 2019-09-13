@@ -87,7 +87,8 @@ bool *greedySparsestcut(adjlist *g) {
 	} while (b);
 
 	//printf("Number of iterations = %u\n",iter);
-
+	free(d0);
+	free(d1);
 	return lab;
 }
 
@@ -157,6 +158,8 @@ bool *greedyDensestcut(adjlist *g) {
 
 	//printf("Number of iterations = %u\n",iter);
 
+	free(d0);
+	free(d1);
 	return lab;
 }
 
@@ -220,6 +223,8 @@ bool *greedyMaxcut(adjlist *g) {
 
 	//printf("Number of iterations = %u\n",iter);
 
+	free(d0);
+	free(d1);
 	return lab;
 }
 
